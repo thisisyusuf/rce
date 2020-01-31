@@ -1,0 +1,53 @@
+body, html {
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.intro{
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/bg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.container > .chat-container{
+  width: 50%;
+  height: 500px;
+  margin: auto;
+}
+
+.sender{
+  background-color: #fff;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  -webkit-border-radius: 20px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 20px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  flex-basis: auto: ;
+}
+
+.sender > .bubble{
+  font-size: 12px;
+  line-height: 24px;
+}

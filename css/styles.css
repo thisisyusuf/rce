@@ -3,6 +3,10 @@ body, html {
   font-family: 'Roboto Mono', monospace;
 }
 
+.intro{
+  height: 100%;
+}
+
 .bg {
   /* The image used */
   background-image: url("../img/bg.jpg");
@@ -16,12 +20,26 @@ body, html {
   background-size: cover;
 }
 
+.container {
+    -webkit-box-flex: 1;
+    flex: 1 1 calc(100vh - 90px - 125px - 2px);
+    overflow: auto;
+}
+
 .chat-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin: auto;
+    width: 100%;
 }
 
 .chat-message{
